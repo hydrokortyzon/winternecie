@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Main</title>
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <link type="text/css" rel="stylesheet" href="css/styleMemory.css" />
+	<link type="text/css" rel="stylesheet" href="fb_arkusz.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">	
+</head>
+<body class="background">
+    <div class="navbar" id="myNavbar">
+        <a href="http://sgorec.cba.pl/">Strona główna</a>
+		<a href="https://jumpeq.github.io/sgorec.github.io/">FB</a>
+		<a><fb:login-button
+					class="nav-item nav-link"
+					id="fb-btn"
+					scope="public_profile,email"
+					onlogin="checkLoginState();">
+				</fb:login-button></a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <div class="wrapper">
+        <div class="push">
+        </div>
+        <div class="center">
+			<div class="tabcontent">
+				<script src="fbapp.js"></script>
+				<div class="collapse navbar-collapse justify-content-between" id="navbarNavAltMarkup">
+				<ul class="nav navbar-nav">
+				<a class="nav-item nav-link" id="logout" href="#" onclick="wyloguj()">Wyloguj się</a>				
+				</ul>
+				</div>
+				<div class="row">
+				<div id="content" class="col-sm-12">
+				<p><h3 id="naglowek"></h3></p>
+				<div id="profil"></div>
+				</div>
+				</div>
+			</div>
+		</div>
+    </div>
+    <div class="footer">
+        <p>® 2019 Programowanie w Internecie</p>
+    </div>
+</body>
+</html>
