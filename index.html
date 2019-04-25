@@ -27,32 +27,34 @@
         </div>
       </div>
     </nav>
-    <div class="wrapper">
-      <a><fb:login-button
-      class="nav-item nav-link"
-      id="fb-btn"
-      scope="public_profile,email"
-      onlogin="checkLoginState();">
-      </fb:login-button></a>
-            
-    
-      <div class="push"></div>
-      <div class="center">
-        <div class="tabcontent">
-          <script src="fbapp.js"></script>
-          <div class="collapse navbar-collapse justify-content-between" id="navbarNavAltMarkup">
-            <ul class="nav navbar-nav">
-            <a class="nav-item nav-link" id="logout" href="#" onclick="wyloguj()">Wyloguj się</a>				
-          </ul>
-          </div>
-            <div class="row">
-            <div id="content" class="col-sm-12">
-              <p><h3 id="naglowek"></h3></p>
-              <div id="profil"></div>
+    <center>
+      <div class="wrapper">
+        <a><fb:login-button
+        class="nav-item nav-link"
+        id="fb-btn"
+        scope="public_profile,email"
+        onlogin="checkLoginState();">
+        </fb:login-button></a>
+              
+      
+        <div class="push"></div>
+        <div class="center">
+          <div class="tabcontent">
+            <script src="fbapp.js"></script>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarNavAltMarkup">
+              <ul class="nav navbar-nav">
+              <a class="nav-item nav-link" id="logout" href="#" onclick="wyloguj()">Wyloguj się</a>				
+            </ul>
+            </div>
+              <div class="row">
+              <div id="content" class="col-sm-12">
+                <p><h3 id="naglowek"></h3></p>
+                <div id="profil"></div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </center>
 </body>
 </html>
